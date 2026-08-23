@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+/*
+ * NexaAI design-system palette conventions (documented here, not new classes):
+ * - base background:      bg-black
+ * - secondary text:       text-zinc-400
+ * - accent gradient:      from-violet-400 to-cyan-400
+ * - primary buttons:      rounded-full bg-white text-black
+ * - secondary buttons:    rounded-full border border-zinc-700 text-white
+ */
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
