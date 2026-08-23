@@ -1,0 +1,74 @@
+const SERVICES = [
+  {
+    icon: "🧭",
+    title: "AI Strategy & Roadmapping",
+    description:
+      "Identify high-leverage AI opportunities and translate them into a prioritised, buildable roadmap.",
+  },
+  {
+    icon: "⚙️",
+    title: "Applied ML Engineering",
+    description:
+      "Design, train, and productionise custom machine learning models tailored to your data and performance requirements.",
+  },
+  {
+    icon: "🤖",
+    title: "LLM & Agent Integration",
+    description:
+      "Embed large language models and autonomous agents into your product with robust prompting, evaluation, and guardrails.",
+  },
+  {
+    icon: "🗄️",
+    title: "Data Infrastructure",
+    description:
+      "Build the pipelines, warehouses, and feature stores your AI systems need to stay fast, reliable, and auditable.",
+  },
+  {
+    icon: "🎨",
+    title: "AI Product Design",
+    description:
+      "UX research and interface design for AI-powered products that users actually trust and enjoy.",
+  },
+  {
+    icon: "📈",
+    title: "Ongoing Optimisation",
+    description:
+      "Continuous monitoring, fine-tuning, and iteration so your models stay accurate as your data evolves.",
+  },
+];
+
+export default function ServicesPage() {
+  return (
+    <div className="bg-black px-6 py-24">
+      <div className="mx-auto flex max-w-3xl flex-col items-center gap-6 text-center">
+        <span className="rounded-full border border-zinc-700 px-4 py-1 text-xs text-zinc-400">
+          Our Services
+        </span>
+
+        <h1 className="text-4xl font-bold text-white sm:text-5xl">
+          Everything you need to go from idea to AI in production
+        </h1>
+
+        <p className="max-w-xl text-zinc-400">
+          From strategy to deployment, we cover every step of building
+          AI-native products that hold up in the real world.
+        </p>
+      </div>
+
+      <div className="mx-auto mt-16 grid max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {SERVICES.map((service) => (
+          <div
+            key={service.title}
+            className="glass-card p-6 transition-transform hover:-translate-y-1"
+          >
+            <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-zinc-800 text-2xl">
+              {service.icon}
+            </div>
+            <h2 className="mt-4 font-semibold text-white">{service.title}</h2>
+            <p className="mt-2 text-sm text-zinc-400">{service.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
