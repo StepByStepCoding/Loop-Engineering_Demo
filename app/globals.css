@@ -34,13 +34,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.glass-card {
-  background-color: var(--color-zinc-900, #18181b);
-  border: 1px solid var(--color-zinc-800, #27272a);
-  border-radius: 1rem;
-  backdrop-filter: blur(4px);
-}
-
+/*
+ * Shared design-system primitives (also defined by NEXA-4's global layout
+ * story). Included here so this page renders correctly standalone; expect
+ * to de-duplicate against app/globals.css from NEXA-4 on merge.
+ */
 @keyframes gradient-slow {
   0%,
   100% {
