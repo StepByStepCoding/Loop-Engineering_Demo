@@ -21,8 +21,8 @@ export default function SiteFooter() {
                 </Link>
               </li>
               <li>
-                <Link href="/careers" className="hover:text-white">
-                  Careers
+                <Link href="/team" className="hover:text-white">
+                  Team
                 </Link>
               </li>
             </ul>
@@ -34,11 +34,6 @@ export default function SiteFooter() {
               <li>
                 <Link href="/services" className="hover:text-white">
                   Services
-                </Link>
-              </li>
-              <li>
-                <Link href="/case-studies" className="hover:text-white">
-                  Case Studies
                 </Link>
               </li>
             </ul>
